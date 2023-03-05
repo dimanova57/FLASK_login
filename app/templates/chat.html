@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    {% for message in all_messages %}
+        {{message}}
+    {% endfor %}
+</div>
+<div>
+    <form action="">
+        <label for="message">Message</label>
+        <input type="text" name="message" id="message">
+        <input type="submit" value="Send">
+    </form>
+</div>
+
+{% endblock %}
